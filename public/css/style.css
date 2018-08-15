@@ -1,7 +1,41 @@
 body {
-  background-color: #ecf1f1
+  background-color: #ecf1f1;
+}
+
+#mainWrap {
+  display: none;
+  margin-bottom: 5px;
 }
 
 .navbar-brand {
   font-size: 2.5rem;
+}
+
+.scroll {
+  max-height: 31%;
+  overflow-y: scroll;
+}
+
+.offset-md-3.col-md-3 {
+  margin-bottom: 5px;
+}
+
+ul.list-group.list-group-striped li:nth-of-type(odd) {
+  background: rgb(189, 189, 192);
+}
+ul.list-group.list-group-striped li:nth-of-type(even) {
+  background: rgb(243, 240, 243);
+}
+ul.list-group.list-group-hover li:hover {
+  background: rgb(126, 125, 125);
+}
+
+div.msg-group-striped strong:nth-of-type(odd) {
+  background: rgb(189, 189, 192);
+}
+div.msg-group-striped strong:nth-of-type(even) {
+  background: rgb(189, 189, 192);
+}
+div.msg-group-hover strong:hover {
+  background: rgb(126, 125, 125);
 }

@@ -14,7 +14,7 @@ html(lang="en")
     .container
       .row
         .col-md-6
-          #error
+          #error.alert-danger
           #userFormWrap
             h2 Create username
             form#userForm
@@ -29,9 +29,12 @@ html(lang="en")
                 textarea#chatInput.form-control(name="body", placeholder="Say something...")
                 br
                 button.btn.btn-primary(type="submit") Send
+            #chatWindow.card.scroll.msg-group-striped.msg-group-hover
         .offset-md-3.col-md-3
           h3 Chat Users
-          ul.list-group
-            #users
-  script(src="/js/jquery.min.js")
-  script(src="/js/bootstrap.bundle.min.js")
+          ul.list-group.list-group-striped.list-group-hover
+            #users.scroll
+    script(src="/js/jquery.min.js")
+    script(src="/js/bootstrap.bundle.min.js")
+    script(src="/js/main.js")
+    script(src='/socket.io/socket.io.js')
