@@ -13,14 +13,17 @@ app.set("view engine", "pug");
 // Static path
 app.use(express.static(path.join(__dirname, "public")));
 
+//  Home page
 app.get("/", (req, res, next) => {
   res.render("index");
 });
 
+//  Socket.io connection
 io.on("connection", function(socket) {
   console.log("a user connected");
 });
 
+//  Init server
 http.listen(port, () => {
   console.log("Server started on port " + port);
 });
