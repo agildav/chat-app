@@ -1,5 +1,5 @@
 # chat-app
-Simple chat app using socket.io
+Chat app using socket.io
 
 # See the live app 
 - [here](https://chatsocketio-app.herokuapp.com/)
