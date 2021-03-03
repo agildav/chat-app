@@ -23,7 +23,7 @@
   "homepage": "https://github.com/agildav/chat-app#readme",
   "dependencies": {
     "express": "^4.16.3",
-    "pug": "^2.0.3",
+    "pug": "^3.0.1",
     "socket.io": "^2.1.1"
   }
 }
